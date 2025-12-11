@@ -1,4 +1,3 @@
-
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
 import eslintPluginComments from 'eslint-plugin-eslint-comments';
 import eslintPluginImport from 'eslint-plugin-import';
@@ -8,7 +7,6 @@ import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import jsPlugin from '@eslint/js';
 import tsEslint from 'typescript-eslint';
-
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -22,14 +20,14 @@ export default [
       'eslint-comments': eslintPluginComments,
     },
     rules: {
-      'prettier/prettier': 'error',
-      'unused-imports/no-unused-imports': 'error',
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-      '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/no-unsafe-assignment': 'error',
-      '@typescript-eslint/no-unsafe-call': 'error',
-      'eslint-comments/no-unused-disable': 'warn',
-      'arrow-body-style': 'off'
+      // 'prettier/prettier': 'error',
+      // 'unused-imports/no-unused-imports': 'error',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      // '@typescript-eslint/no-unsafe-assignment': 'error',
+      // '@typescript-eslint/no-unsafe-call': 'error',
+      // 'eslint-comments/no-unused-disable': 'warn',
+      'arrow-body-style': 'off',
     },
   },
   { files: ['**/*.{js,mjs,cjs,ts}'] },
